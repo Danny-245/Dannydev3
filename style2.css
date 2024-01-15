@@ -102,7 +102,7 @@ section .nav-sec ul li {
     color: #c5cbe3;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1150px) {
     section .nav-sec {
         display: none;
         visibility: hidden;
