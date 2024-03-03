@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --active-navlink: #e98074;
     --logo-color: #002855;
@@ -16,6 +10,8 @@
     --icon-color: #2788f7;
     --line-height: 27px;
     --border-radius: 20px;
+    --borderless: #00285594;
+    
 }
 
 h1,
@@ -54,6 +50,9 @@ nav .navbar-brand {
     color: var(--logo-color);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
+}
+nav .navbar-brand img {
+    width: 160px;
 }
 
 nav .navbar-nav li a {
@@ -102,7 +101,7 @@ section .nav-sec ul li {
     color: #c5cbe3;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1100px) {
     section .nav-sec {
         display: none;
         visibility: hidden;
@@ -205,6 +204,9 @@ header .get-started .email-con button {
 .hr-head2 {
     color: #ddddddf5;
 }
+.modal-title {
+    font-weight: 800;
+}
 
 @media (max-width: 650px) {
     .get-started-btn {
@@ -221,7 +223,57 @@ header .get-started .email-con button {
         border-right: 1px solid #ddd;
     }
 }
+/* CONTACT */
+section.contact-info {
+    background-color: var(--light-blue);
+}
+.contact-info .fw-bold {
+font-size: 32px;
+}
+.borderless {
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 2px solid var(--borderless);
+    border-radius: 0;
+}
+.form-control {
+    background-color: transparent;
+}
+.form-control:focus{
+background-color: transparent;
+border-color: #002855;
+color: #002855;
+box-shadow: inset 0 1px 1px transparent;
+outline: 0 !important;
 
+}
+.contact-btn {
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    background-color: var(--footer-bg);
+}
+.contact-content {
+    font-family: 'Poppins', sans-serif;
+}
+.contact-content p.fw-bolder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800 !important;
+}
+.contact-content p.gry {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500 !important;
+}
+.bi-geo-alt-fill, .bi-phone, .bi-envelope {
+     padding: 10px 15px;
+     font-size: 20px;
+    color: var(--icon-color); 
+    background-color: var(--icon-bg-color);
+    border-radius: 50px;
+}
 /* records */
 
 .rec .rec-head {
@@ -464,10 +516,12 @@ header .get-started .email-con button {
     border-radius: 50px;
     color: #fff;
 }
+
 @media (max-width: 990px) {
     .card-text h4 {
         font-size: 12px;
     }
+
     .card-text p {
         font-size: 10px;
     }
@@ -479,30 +533,38 @@ header .get-started .email-con button {
     font-weight: 700;
     font-size: 30px;
 }
+
 .wts-box {
     margin-top: 40px;
 }
+
 .wts-box .margin-top {
     margin-top: 110px;
 }
+
 .wts-box .wts-head h3 {
     font-size: 15px;
     font-weight: 700;
 }
+
 .wts-box .wts-head p {
     font-size: 12px;
     margin: 0;
 }
+
 .wts-body p {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
 }
+
 .wts-box img {
     width: 500px;
 }
+
 .hr-wts {
     color: #3333332f;
 }
+
 /* innovation */
 .inno-box {
     padding: 35px 25px;
@@ -510,14 +572,16 @@ header .get-started .email-con button {
     border-radius: 20px;
     background-color: var(--box-color);
 }
+
 .inno-box .inno-header h5 {
-font-size: 45px;
-font-weight: 800;
+    font-size: 45px;
+    font-weight: 800;
 }
 
 .inno-box p {
     line-height: var(--line-height);
 }
+
 .inno-box h6 {
     font-size: 12px;
     color: #1a66bd;
@@ -525,16 +589,19 @@ font-weight: 800;
     letter-spacing: 2px;
 
 }
+
 /* LET'S TALK */
 
 .beep-con {
     margin-top: 100px;
 }
+
 .beep-box h4 {
     font-size: 35px;
     font-weight: 800;
     color: var(--footer-bg);
 }
+
 .beep-box h4 span {
     font-family: 'Poppins', sans-serif;
     color: transparent;
@@ -542,6 +609,7 @@ font-weight: 800;
     text-stroke: 1px #000;
     text-transform: uppercase;
 }
+
 .beep-box .top {
     margin: 100px 0;
     color: #114683;
@@ -549,6 +617,7 @@ font-weight: 800;
     letter-spacing: 2px;
     font-size: 12px;
 }
+
 .beep-box a {
     text-decoration: none;
     color: #fff;
@@ -556,17 +625,21 @@ font-weight: 800;
     border-radius: 4px;
     background-color: var(--footer-bg);
 }
+
 .beep-con {
     background-color: var(--light-blue);
 }
+
 @media (max-width: 550px) {
     .beep-box h4 {
         font-size: 24px;
     }
 }
+
 .beep-con {
     border-top: 1px solid #e7f0fa;
 }
+
 /* footer */
 
 footer {
