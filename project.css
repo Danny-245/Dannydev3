@@ -47,6 +47,9 @@ nav .navbar-nav li a {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
 }
+nav .navbar-brand img {
+    width: 160px;
+}
 nav .navbar-nav li a:hover {
     color: #00000059;
 }
@@ -79,7 +82,7 @@ section .nav-sec ul li {
 .section .dropdown .dropdown-menu .dropdown-item a {
     color: #c5cbe3;
 }
-@media (min-width: 1160px) {
+@media (min-width: 900px) {
     section .nav-sec{
         display: none;
         visibility: hidden;
