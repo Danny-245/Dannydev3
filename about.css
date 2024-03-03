@@ -42,6 +42,9 @@ nav .navbar-brand {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
 }
+nav .navbar-brand img {
+    width: 160px;
+}
 nav .navbar-nav li a {
     color: var(--navlink);
     text-transform: uppercase;
@@ -80,7 +83,7 @@ section .nav-sec ul li {
 .section .dropdown .dropdown-menu .dropdown-item a {
     color: #c5cbe3;
 }
-@media (min-width: 1160px) {
+@media (min-width: 900px) {
     section .nav-sec{
         display: none;
         visibility: hidden;
