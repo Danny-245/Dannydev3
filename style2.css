@@ -196,6 +196,8 @@ header .get-started .email-con button {
     color: #fff;
     background-color: var(--footer-bg);
 }
+.lead {
+font-family: 'Poppins', sans-serif;
 
 .hr-head {
     color: #ddddddf5;
