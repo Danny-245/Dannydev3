@@ -36,6 +36,9 @@ p {
     background-position: center;
     background-size: 100%;
 }
+.lead {
+    font-family: 'Poppins', sans-serif;
+}
 
 nav.nav-style {
     background-color: #fff;
@@ -196,8 +199,6 @@ header .get-started .email-con button {
     color: #fff;
     background-color: var(--footer-bg);
 }
-.lead {
-font-family: 'Poppins', sans-serif;
 
 .hr-head {
     color: #ddddddf5;
@@ -257,6 +258,10 @@ outline: 0 !important;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     background-color: var(--footer-bg);
+    transition: .2s;
+}
+.contact-btn:hover , .contact-btn:focus {
+    background-color: #1f4066;
 }
 .contact-content {
     font-family: 'Poppins', sans-serif;
