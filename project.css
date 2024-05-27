@@ -248,3 +248,36 @@ footer .footer-list li a{
     border-bottom-right-radius: 4px;
    
 }
+/* ///////////////////////////////// */
+.special-project .image-ios img {
+    border-radius: 10px;
+    /* width: 400px; */
+}
+.ios-text {
+    margin: 20px 0;
+}
+.ios-text {
+    font-family: 'Poppins', sans-serif;
+}
+.ios-text .mb-2 {
+    font-weight: 800;
+}
+.ios-text .text-2 {
+    text-transform: uppercase;
+    color: #002855;
+    font-size: 13px;
+    color: #2788f7;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.about-ios {
+    font-family: 'Poppins', sans-serif;
+
+}
+.about-ios p {
+    font-size: 10px;
+}
+.ios-tit {
+    font-size: 30px;
+    font-weight: bold;
+}
