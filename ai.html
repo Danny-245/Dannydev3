@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Slider</title>
+  <style>
+    .slider-container {
+      width: 400px;
+      height: 100px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .slider {
+      display: flex;
+      width: 1600px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      transition: left 0.5s ease-in-out;
+    }
+    
+    .slide {
+      width: 400px;
+      height: 100px;
+      flex-shrink: 0;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">Slide 1</div>
+      <div class="slide">Slide 2</div>
+      <div class="slide">Slide 3</div>
+      <div class="slide">Slide 4</div>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    let position = 0;
+    const slideWidth = 400;
+    
+    function slideLeft() {
+      position -= slideWidth;
+      if (position < -slideWidth * 3) {
+        position = 0;
+      }
+      slider.style.left = position + 'px';
+    }
+    
+    setInterval(slideLeft, 2000);
+  </script>
+</body>
+</html>

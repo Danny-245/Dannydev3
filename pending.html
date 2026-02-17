@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="7;url=index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Arimo:wght@400;700&family=Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=DM+Sans:opsz,wght@9..40,100&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;200;300;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300&family=Rubik+Pixels&family=Tajawal&family=Titillium+Web:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="preload" id="loader">
+        <div class="load">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="warn">
+            <div class="bot">
+                <img src="img/bot.png" class="bot-img" alt="">
+            </div>
+            <div class="warn-txt">
+                Sorry, this page is currently unavailable at the moment
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+        function removeLoader() {
+            const loader = document.getElementById("loader");
+            if(loader) {
+                loader.remove();
+            }
+        }
+        setTimeout(removeLoader, 5000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: rgb(122, 51, 51);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container .main {
+            width: 40%;
+            text-align: center;
+
+            padding: 50px 15px;
+            background-color: rgb(13, 13, 90);
+        }
+
+        .container .main button {
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 23px;
+            font-family: sans-serif;
+            padding: 20px 40px;
+            width: 200px;
+
+        }
+
+        .container .main button.hov1 {
+            position: relative;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid rgba(155, 152, 7, 0.753);
+        }
+
+        .container .main button.hov1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0%;
+            width: 100%;
+            background-color: rgba(155, 152, 7, 0.753);
+            transition: 0.3s ease-in-out;
+        }
+
+        .container .main button.hov1:hover::before {
+            height: 50%;
+        }
+
+        .container .main button.hov1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 0;
+            width: 100%;
+            background-color: rgba(155, 152, 7, 0.753);
+            transition: 0.3s ease-in-out;
+        }
+
+        .container .main button.hov1:hover::after {
+            height: 50%;
+        }
+
+        .container .main button.hover {
+            background-color: transparent;
+            position: relative;
+            color: #b9cf67;
+            border: 2px solid #60770d;
+        }
+
+        .container .main button.hover::before {
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            content: '';
+            width: 0%;
+            height: 100%;
+            background-color: rgba(155, 152, 7, 0.753);
+            transition: 0.3s ease-in-out;
+        }
+        .container .main button.hover::after {
+            top: 0px;
+            right: 0px;
+            position: absolute;
+            content: '';
+            width: 0%;
+            height: 100%;
+            background-color: rgba(155, 152, 7, 0.753);
+            transition: 0.3s ease-in-out;
+        }
+        .container .main button.hover:hover::after {
+            width: 50%;
+        }
+        .container .main button.hover:hover::before {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <button class="hov1">Open</button>
+            <button class="hover">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
