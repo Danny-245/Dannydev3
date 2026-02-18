@@ -13,7 +13,7 @@ function redirect() {
     }, 1000);
 }
 
-<<<<<<< HEAD
+  
 redirect();
 =======
 redirect();

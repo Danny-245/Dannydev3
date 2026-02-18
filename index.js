@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const openNav = document.getElementById('open-nav')
 const hideNav = document.getElementById('hideNav');
 const nav = document.getElementById('openNav');
