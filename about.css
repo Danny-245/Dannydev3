@@ -153,6 +153,15 @@ section.wts {
     border-radius: 4px;
     background-color: #2788f744;
 }
+.product-ownership { background: #f7f9fd; }
+.product-kicker { margin-bottom: 8px; color: #2788f7; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+.product-intro { max-width: 620px; }
+.owned-product { padding: 28px; border: 1px solid #dde6f7; border-radius: 14px; background: #fff; box-shadow: 0 6px 18px rgba(0, 40, 85, .05); }
+.owned-product-image { display: block; width: 100%; height: 140px; margin-bottom: 22px; border-radius: 10px; object-fit: contain; background: #f7f9fd; }
+.owned-product h3 { color: #002855; font-size: 24px; }
+.owned-product p { min-height: 96px; color: #637083; font-size: 14px; line-height: 1.7; }
+.owned-product a { color: #002855; font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 600; text-decoration: none; }
+.owned-product a:hover { color: #2788f7; }
 /* devo */
 
 .devo-con {

@@ -187,6 +187,49 @@ section.port .transparent-text h1 {
 .port .project-img img {
     width: 500px;
 }
+.project-grid .project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 290px;
+    padding: 18px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #dde6f7;
+    overflow: hidden;
+}
+.project-grid .project-img img {
+    width: 100%;
+    max-width: 540px;
+    max-height: 350px;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+.project-grid .project-img:hover img {
+    transform: scale(1.03);
+}
+.project-grid .featured-project .project-img {
+    background: linear-gradient(135deg, #eaf4ff, #fff);
+    border-color: #a9cffb;
+}
+.project-description {
+    max-width: 500px;
+    margin: 0 auto 14px;
+    color: #5e6a7c;
+    font-size: 14px;
+    line-height: 1.65;
+}
+.project-link {
+    color: #002855;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.project-link:hover { color: #2788f7; }
+@media (max-width: 576px) {
+    .project-grid .project-img { min-height: 210px; padding: 12px; }
+}
 /* footer */
 
 footer {

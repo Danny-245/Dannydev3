@@ -88,6 +88,8 @@ section .nav-sec.remove {
     display: none;
 }
 
+ 
+
 section .nav-sec i.bi-x {
     margin-top: 15px;
     font-size: 40px;
@@ -477,6 +479,91 @@ outline: 0 !important;
     text-stroke: 1px #000;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+/* Homepage featured projects: fixed image frames and a compact responsive grid */
+.portfolio.py-5 {
+    overflow: hidden;
+    background: #f7f9fd;
+}
+
+.portfolio .homepage-project-grid {
+    width: min(1240px, 100%);
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.portfolio .homepage-project-grid .row {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px !important;
+    margin: 0 !important;
+}
+
+.portfolio .homepage-project-grid .row > [class*="col-"] {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+}
+
+.portfolio .homepage-project-card {
+    display: flex;
+    min-height: 285px;
+    height: 100%;
+    padding: 12px;
+    flex-direction: column;
+    border: 1px solid #dbe7f5;
+    border-radius: 12px;
+    background: #fff;
+    color: #002855;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 40, 85, .06);
+    overflow: hidden;
+}
+
+.portfolio .homepage-project-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 112px !important;
+    min-height: 112px !important;
+    max-height: 112px !important;
+    margin: 0 0 12px !important;
+    border-radius: 8px;
+    background: #f7f9fd;
+    object-fit: contain !important;
+}
+
+.portfolio .homepage-project-card strong {
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+}
+
+.portfolio .homepage-project-card small {
+    color: #637083;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.portfolio .homepage-project-type {
+    margin-bottom: 6px;
+    color: #2788f7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    .portfolio .homepage-project-grid .row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 575px) {
+    .portfolio .homepage-project-grid .row { grid-template-columns: 1fr; }
+    .portfolio .homepage-project-card { min-height: 250px; }
+    .portfolio .homepage-project-card img { height: 135px !important; min-height: 135px !important; max-height: 135px !important; }
 }
 
 /* card */
