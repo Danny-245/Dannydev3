@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dannydev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Arimo:wght@400;700&family=Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300&family=Rubik+Pixels&family=Tajawal&family=Titillium+Web:wght@300;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Arimo:wght@400;700&family=
+Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&family=Rubik+Pixels&family=Tajawal&family=Titillium+Web:ital,wght@0,300;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Arimo:wght@400;700&family=Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=DM+Sans:opsz,wght@9..40,100&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300&family=Rubik+Pixels&family=Tajawal&family=Titillium+Web:wght@300;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Arimo:wght@400;700&family=Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=DM+Sans:opsz,wght@9..40,100&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300&family=Rubik+Pixels&family=Tajawal&family=Titillium+Web:wght@300;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/png" href="img/bot.png">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Arimo:wght@400;700&family=Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=DM+Sans:opsz,wght@9..40,100&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;300&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300&family=Rubik+Pixels&family=Tajawal&family=Titillium+Web:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Arimo:wght@400;700&family=Asap+Condensed:wght@300&family=Bad+Script&family=Cabin+Condensed&family=Caveat&family=DM+Sans:opsz,wght@9..40,100&family=Dancing+Script:wght@700&family=Foldit:wght@100&family=Heebo:wght@200&family=IBM+Plex+Sans:ital,wght@1,500&family=Indie+Flower&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Lato:wght@300&family=Marck+Script&family=Montserrat:wght@100;200&family=Nunito:wght@200;300;400;600;800&family=Oleo+Script&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;200;300;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300&family=Rubik+Pixels&family=Sevillana&family=Tajawal&family=Titillium+Web:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- <script async src="app.js"></script> -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <!-- <div class="user-profile">
+    <label for="user" class="user">Username</label>
+    <input type="text" id="user_name" class="input-field" max="10" placeholder="E.g: Tyler,lucas,Robin,Smith">
+    <input type="submit" onclick="saveUsername()" class="submit-btn">
+  </div> -->
+
+  <!-- <div class="eve" id="eve" onload="showNyeve()">
+    <div class="new-year-eve"   >
+      <div class="cancel-btns" id="rm-btn">
+        &times;
+      </div>
+      <img class="santa" src="img/santa.png" alt="">
+      <div class="new-year">
+        <div class="img">
+          <h1>Happy new year</h1> -->
+          <!-- <p>2024🎁🎄</p> -->
+        </div>
+        <!-- <img class="gif" src="img/new-years-eve-happy-new-years-eve.gif" alt=""> -->
+        <!-- <p class="wishes">Happy new year!, May this year be your best one yet, filled with love and success!, I hope
+          your new year is filled with good friends, great adventure, and even better treats!
+          May all your dreams take flight in 2024. Happy New Year! 🎁🎄
+        </p> -->
+
+    <!-- <div class="new-year-gift">
+          <div class="button-sur">
+            <i id='quo-ny' class="bi bi-quote"></i>
+            <p>Happy new year! 🎉 As a token of appreciation, I'm excited to gift you acces to <span>Web development
+                and other programming premium courses
+
+              </span>, and i thought you might find it interesting and valauble. Enjoy the learning journey, and here's
+              to a year filled with growth and new experiences! 🌟</p>
+
+          </div>    
+          <div class="ny-flex">
+            <div class="btn-redeem">
+              <a href="https://wa.link/8ammuv"> <button onclick="redeemGift()" disabled class="ny" id="redeem-code">
+                  Click to Redeem Gift
+                </button>
+              </a>
+            </div>
+            <div class="redeem-code">
+              <button class="redeem-code-btn" id="generate-code">Redeem code</button>
+              <h3 class="output"><span class="copy-code" onclick="copyText()" id="copy">Copy</span>Code: <span id="code"></span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="tips">
+          <h4>TIPS:</h4>
+          <ul class="list">
+            <li>firstly, Click on the 'Redeem code' button to redeem a code</li>
+            <li>when you clicked the button, you were given a code, 'copy' the code</li>
+            <li>Then, wait for 2 seconds and click the 'click the redeem Gift' button</li>
+            <li>You will be redirected to my whatsapp DM with an automated message; fulfill the task! </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+
+  <!-- <div onclick="redirectToURL()" class="livechat" id="livebtn">
+      <i class="fa-solid fa-comments"></i>
+    </div> -->
+  <div class="modal" id="modalsuc">
+    <p>Successfully submitted <i class="fa-solid fa-circle-check"></i></p>
+    <p class="row-down" id="rd"></p>
+  </div>
+
+  <div class="invalidmsg" id="invalidMsg">
+    <div class="msg">
+      <div class="cancelBtn" id="cncBtn" onclick="closeFun()">&times;</div>
+      <p>Pls,Fill in the provided field</p>
+    </div>
+
+  </div>
+  <div class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <!-- <img src="img/brand-removebg-preview.png" alt="" width="80px"> -->
+        <!-- <i class="bi bi-journal-code"></i> -->
+
+        <h3 class="logo-name">Dannydev</h3>
+      </div>
+      <div class="link">
+        <ul class="navbar-link">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="pending.html">Category</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="pending.html">Courses</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-bar">
+        <span class="line line-one"></span>
+        <span class="line line-two"></span>
+        <span class="line line-three"></span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- greetings -->
+
+  <div class="wlc-greeting">
+    <div class="profile">
+
+    </div>
+    <div class="greet-txt">
+      <p id="username"></p>
+      <p class="wlc-txt" id="wlc-greetings"></p>
+      <h4 class="tag-from">@Dannydev</h4>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="main">
+      <div class="rot-fut">
+        <div class="rot"></div>
+        <div class="fut"></div>The future is here!
+      </div>
+      <h1 class="hh">Talking challenges in the digital realm.</h1>
+      <p class="soln">
+        Solving digital problem and providing the best solution to them,
+        Maximize your online presence,bringing your imagination to reality
+      </p>
+      <div class="form">
+        <form id="form">
+          <p class="get">Get started today</p>
+          <div class="flexx">
+            <div class="em">
+              <input type="email" placeholder="Email address" class="email" id="email" />
+            </div>
+            <div class="btnsb">
+              <button class="btnsub" id="subBtn">Get started</button>
+            </div>
+          </div>
+        </form>
+        <button onclick="setout();" class="too">Get started</button>
+      </div>
+    </div>
+    <div class="img">
+      <img src="img/3d.png" alt="" class="dimg" />
+    </div>
+  </div>
+
+  <div class="autotype">
+    <div class="type">
+      <p class="we">We</p>
+      &nbsp; &nbsp; &nbsp;<span class="write"></span>
+    </div>
+  </div>
+
+  <hr class="line" />
+  <div class="context">
+    <div class="con-box">
+      <h3>up to 2k</h3>
+      <p>Range of Talent</p>
+    </div>
+    <div class="con-box">
+      <h3>128+</h3>
+      <p>Projects Handled</p>
+    </div>
+    <div class="con-box">
+      <h3>78%</h3>
+      <p>Come back Clients</p>
+    </div>
+    <div class="con-box">
+      <h3>100%</h3>
+      <p>Solutions working</p>
+    </div>
+  </div>
+
+  <div class="ourplans">
+    <div class="plans">
+      <h3>What have we been up to?</h3>
+      <p class="plan-txt">
+        ArithmeticSolver is here to simply the process of solving digital
+        arithmetic math problems and comprehending the formulas behind them.
+        <br />
+        <br />We offer a user-friendly platform that provides quick and
+        accurate solutions to a wide range of digital arithmetic equations.
+        But that's not all - we go the extra mile by eplaining the formulas
+        and concepts used in each solution, ensuring that you not only find
+        the answer but also understand how to arrive at it.
+      </p>
+      <a href="#"><button class="see-more">See more</button></a>
+    </div>
+    <div class="img-des">
+      <img width="" src="img/mock2.jpg" alt="" />
+    </div>
+  </div>
+
+  <div class="wwd">
+    <h2 class="services">SERVICES</h2>
+    <div class="wwdin">
+      <div class="maths-box boms">
+        <div class="maths">
+          <i class="bi bi-calculator"></i>
+          <p>
+            Mathematical <br />
+            solution
+          </p>
+        </div>
+        <div class="maths-txt">
+          Are you struggling with digital arithmetic math problems? Do you
+          need a quick and reliable resource for solving these equations and
+          understanding the underlying formulas? Look no further! We're
+          excited to introduce ArithmeticSolver.
+        </div>
+      </div>
+
+      <div class="Webdev boms">
+        <div class="web">
+          <i class="bi bi-code-square"></i>
+          <p>
+            web <br />
+            development
+          </p>
+        </div>
+        <div class="web-txt">
+          In today's digital landscape, a mobile-friendly website is crucial.
+          We ensure that your site looks and functions flawlessly on all
+          devices, from desktops to smartphones.
+        </div>
+      </div>
+
+      <div class="graph boms">
+        <div class="gra">
+          <i class="bi bi-bezier"></i>
+          <p>
+            Graphic <br />
+            designing
+          </p>
+        </div>
+        <div class="web-txt">
+          Whether it's logo design, branding, web graphics, marketing
+          collateral ,or any other visual element. We create captivating
+          design conveying message about your brand. Bring your vision to
+          life.Creativity is at the core of what i do.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="proto">
+    <div class="proto-txt">
+      <h3>Your Gateway To Exposure</h3>
+      <p>
+        More than creating a seamless platform to solve extremely problems, we are with you every step of the way,
+        providing you with tips
+        and tricks to solving arithmetic and outsmarting examination fever.
+      </p>
+    </div>
+    <div class="chatbox">
+      <div class="first chat">
+        <div class="img"></div>
+        <p><span>@susander </span>Enlighten the younger ones will be...</p>
+      </div>
+      <div class="second chat">
+        <div class="img"></div>
+        <p><span>@georgeThesleer </span>Let's discuss with the team of...</p>
+      </div>
+      <div class="third chat">
+        <div class="img"></div>
+        <p><span>@amandaThedas </span>We are looking forward to receive the pro...</p>
+      </div>
+      <div class="fourth chat">
+        <div class="img"></div>
+        <p><span>@jacksonrr </span>Let's reschedule some other time..</p>
+      </div>
+    </div>
+  </div>
+  <hr class="line" />
+  <h2 class="services">OUR PORTFOLIO</h2>
+  <div class="gallery-wrapper">
+    <img src="img/back.png" alt="" id="backbtn">
+    <div class="gallery">
+      <div>
+        <span><img src="img/pro2.jpg" alt="img1">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Q-code</p>
+              <p class="cp">Community</p>
+            </div>
+
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+        <span> <img src="img/pro3.jpg" alt="img3">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Rating</p>
+              <p class="cp">Graphics</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+        <span><img src="img/pro4.jpg" alt="img4">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Fletchy</p>
+              <p class="cp">Graphics</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+        <span> <img src="img/pro3.jpg" alt="img3">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Q-code</p>
+              <p class="cp">Community</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+      </div>
+      <div>
+        <span><img src="img/pro2.jpg" alt="img1">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Q-code</p>
+              <p class="cp">Community</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+        <span> <img src="img/pro3.jpg" alt="img3">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Rating</p>
+              <p class="cp">Graphics</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+        <span><img src="img/pro4.jpg" alt="img4">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Fletchy</p>
+              <p class="cp">Graphics</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+        <span> <img src="img/pro3.jpg" alt="img3">
+          <div class="txt">
+            <div class="inn-txt">
+              <p class="p">Q-code</p>
+              <p class="cp">Community</p>
+            </div>
+            <div class="arrow">
+
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <img src="img/next.png" alt="" id="nextbtn">
+  </div>
+
+  <hr class="line" />
+
+  <div class="what-they-say">
+    <p class="h5">What they say</p>
+    <div class="flex">
+
+      <div class="wds-txt">
+        <p class="wds-head">Chikezie Daniel</p>
+        <p class="sub-head">Healthcare</p>
+        <p class="sub-head">manager</p>
+        <p class="h2">
+          Thank you Dannydev Team for your Amazing web solution , App Design and Branding for my Gig We will continue
+          working with you for excellent service delivery
+
+
+
+        </p>
+      </div>
+      <div class="wds-img">
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="line" />
+
+  <div class="inno">
+    <div class="inno-box">
+      <div class="inno-inn">
+        <h3 class="dri-inno">
+          Driven by Innovation.
+        </h3>
+        <p class="inno-txt">
+          We create digital experiences for brands; communicating the unique services provided to your esteemed
+          customers. Creativity for us is something personal! Our Focus is to give ambitious
+          brands a push to the next level. Contact US now.
+        </p>
+
+
+        <p class="inno-quo">
+          IT'S NOT JUST A JOB! IT'S PASSION!
+        </p>
+      </div>
+
+      <div class="img-3d">
+        <img src="img/avatar.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="beep">
+    <div class="beep-txt">
+      <h5>
+        LET'S TALK
+      </h5>
+      <h1><span>ABOUT YOUR</span> NEXT PROJECT</h1>
+
+      <a href="https://wa.link/fpdthb"><button class="wa-link"><i class="bi bi-bell"></i> &nbsp;BEEP</button></a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-quote">
+      <!-- <img  src="img/quo.png" alt="" width="30px"> -->
+      <i id="qou" class="bi bi-quote"></i>
+      <h4 class="quotes">
+        Success is not the key to happiness. Happiness is the key to success. If you love what you are doing,
+        you will be successful. - Albert Schweitzer
+      </h4>
+    </div>
+    <div class="contact">
+      <h4 class="txt">
+        contact
+      </h4>
+      <p>info@dannydev.online</p>
+      <p>support@dannydev.online</p>
+      <p>+234 701 631 7045</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/dann_ydev?igsh=ODA1NTc5OTg5Nw=="><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/Dann_ydev?t=Y8TF7iShfZ8LoE7WrsqCYA&s=08"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100085677906803"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com/@chibuezechikezie?si=vS22iKNl4EjHwuzy"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+    <div class="news">
+      <h4 class="txt">
+        Newsletter
+      </h4>
+      <p>Join our community and be the first to know of any update</p>
+      <form class="input-email">
+        <input type="email" placeholder="Enter your email..." name="email" id="email" class="email">
+        <button type="submit" class="sub">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- <i class="bi bi-list-nested"></i>  -->
+
+
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    const menuBar = document.querySelector(".menu-bar");
+    const linkList = document.querySelector(".link");
+
+    menuBar.onclick = function () {
+      menuBar.classList.toggle("show");
+      linkList.classList.toggle("height");
+    };
+
+    var typed = new Typed(".write", {
+      strings: [
+        "Develop websites.",
+        "Design Graphics.",
+        "Provide solution to Digital problem.",
+        "Innovate | Educate.",
+      ],
+      typeSpeed: 50,
+      backSpeed: 20,
+      loop: true,
+    });
+
+
+  </script>
+
+  <script src="//code.tidio.co/v1ys40rtfgoxclhp04ighqfrhkyqhx7y.js" async></script>
+</body>
+
+</html>

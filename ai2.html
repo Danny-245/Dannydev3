@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Code Generator</title>
+    <style>
+      /* Set some basic styling for the code */
+      #code {
+          font-size: 2em;
+          font-family: monospace;
+          margin-bottom: 20px;
+      }
+      
+      #generate-button {
+          font-size: 1.5em;
+          padding: 10px 20px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Random Code Generator</h1>
+    
+    <button id="generate-button">Generate Code</button>
+    <div id="code"></div>
+    
+    <script>
+        // Function to generate a random code
+        function generateCode() {
+            var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var code = "";
+            var codeLength = 10;
+            
+            // Loop through the desired code length and pick random characters from the 'characters' string
+            for (var i = 0; i < codeLength; i++) {
+                var randomIndex = Math.floor(Math.random() * characters.length);
+                code += characters[randomIndex];
+            }
+            
+            // Display the generated code on the webpage
+            document.getElementById("code").innerText = code;
+        }
+        
+        // Add event listener to the button to call the generateCode() function when clicked
+        document.getElementById("generate-button").addEventListener("click", generateCode);
+    </script>

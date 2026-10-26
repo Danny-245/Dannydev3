@@ -1,0 +1,37 @@
+
+.card-con .card-box .card-img img {
+    
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+}
+.card-con {
+    padding: 25px;
+}
+.card-text h4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #2788f7;
+    letter-spacing: 2px;
+}
+.card-text p {
+     font-size: 15px;
+     margin: 0;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.card-body {
+    padding: 30px 25px;
+}
+.card-box {
+    border-radius: 5px;
+}
+.card-icon i {
+    margin: 0;
+}
+.bi-arrow-right-short {
+    padding: 5px 7px;
+    background-color: #d6dff2;
+    border-radius: 50px;
+    color: #fff;
+}
