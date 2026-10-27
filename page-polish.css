@@ -183,4 +183,17 @@
  .about-page .about-story .col-lg-6{grid-template-columns:1fr;gap:20px}
  .about-page .devo-con img{height:240px}
 }
+/* Keep the phone hero compact instead of stacking Bootstrap column spacing
+   with the hero and call-to-action margins. */
+@media(max-width:767px){
+ .home-page header.head{padding:32px 0 36px}
+ .home-page header.head>.container>.row{--bs-gutter-y:0}
+ .home-page header.head>.container>.row>div:first-child{padding-inline:0;margin-bottom:0!important}
+ .home-page .head .header-body{padding:0;margin:0}
+ .home-page .head .header-top{margin-bottom:14px}
+ .home-page .head .header-body .header-head h1{margin-bottom:18px}
+ .home-page .head .header-head-text{margin-top:0!important;margin-bottom:20px!important}
+ .home-page header .get-started{margin-top:20px;padding-top:16px}
+ .home-page .head .get-started-btn{margin:16px 0 0;padding:13px 16px}
+}
 @media(prefers-reduced-motion:reduce){.polished-page .service-box,.polished-page .homepage-project-card,.polished-page .owned-product,.polished-page .see-more-btn button{transition:none!important;transform:none!important}}
