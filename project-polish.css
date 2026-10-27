@@ -1,0 +1,46 @@
+/* Portfolio presentation, matching the pricing-page visual language. */
+.projects-page .about-margin-top{margin:0;padding:76px 0 65px}
+.projects-page .about-con{background:transparent;border-radius:0}
+.projects-page .about-con>.row{align-items:center;--bs-gutter-x:60px;--bs-gutter-y:32px}
+.projects-page .about-text-box{padding:0}
+.projects-page .about-text-box h1{font-size:clamp(40px,4.7vw,62px);line-height:1.08;letter-spacing:-2.2px;color:var(--polish-navy);max-width:560px}
+.projects-page .about-con .about-text-box .text-muted{font-size:15px;line-height:1.9;max-width:500px}
+.projects-page .about-con img.about-img{display:block;width:100%;height:330px;object-fit:contain;padding:20px;background:var(--polish-pale);border:1px solid var(--polish-line);border-radius:16px;box-shadow:0 22px 60px #0028550b}
+.projects-page .port{background:var(--polish-pale);border-top:1px solid var(--polish-line)}
+.projects-page .transparent-text{text-align:left!important}
+.projects-page .transparent-text>h2{font-size:clamp(30px,3.5vw,44px);line-height:1.15;letter-spacing:-1.2px;color:var(--polish-navy);margin-bottom:38px!important}
+.projects-page .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.projects-page .project-grid>div{display:flex;flex-direction:column;width:auto;min-width:0;max-width:none;margin:0!important;padding:20px;background:#fff;border:1px solid var(--polish-line);border-radius:14px;text-align:left!important;box-shadow:0 6px 20px #00285504;transition:transform .25s,box-shadow .25s}
+.projects-page .project-grid>div:hover{transform:translateY(-4px);box-shadow:0 15px 35px #0028550d}
+.projects-page .project-grid .project-img{height:260px;min-height:0;padding:18px;margin:0 0 24px!important;border-radius:10px;border:1px solid var(--polish-line);background:#edf3fa;overflow:hidden}
+.projects-page .project-img>a{display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+.projects-page .project-grid .project-img img{display:block;width:100%;max-width:100%;height:100%;max-height:100%;object-fit:contain}
+.projects-page .project-text{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:0 6px 6px;font-family:'Open Sans',sans-serif}
+.projects-page .project-text .mb-2{font-family:'Outfit',sans-serif;font-size:29px;font-weight:600;line-height:1.2;letter-spacing:-.6px;margin-bottom:10px!important}
+.projects-page .project-text .text-2{font-family:'Open Sans',sans-serif;font-size:9px;font-weight:600;letter-spacing:1.6px;line-height:1.7;color:var(--polish-blue);margin-bottom:18px}
+.projects-page .project-description{max-width:none;margin:0 0 24px;color:var(--polish-muted);font-size:13px;line-height:1.85}
+.projects-page .project-link{display:inline-flex;align-items:center;gap:18px;padding:11px 17px;margin-top:auto;border:1px solid var(--polish-line);border-radius:7px;color:var(--polish-navy);font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;transition:background .2s,color .2s}
+.projects-page .project-link:hover{background:var(--polish-navy);color:#fff}
+.projects-page .project-grid>.featured-project{background:var(--polish-navy);color:#fff;border-color:var(--polish-navy)}
+.projects-page .featured-project .project-img{background:#eaf3ff;border-color:#c5dffd}
+.projects-page .featured-project .text-2{color:#8abfff}
+.projects-page .featured-project .project-description{color:#c1d2e7}
+.projects-page .featured-project .project-link{background:var(--polish-coral);border-color:var(--polish-coral);color:var(--polish-navy)}
+.projects-page .featured-project .project-link:hover{background:#f2a297;border-color:#f2a297}
+@media(max-width:991px){
+ .projects-page .about-margin-top{padding-block:50px}
+ .projects-page .about-con img.about-img{height:300px;max-width:600px;margin:auto}
+ .projects-page .project-grid{gap:22px}
+ .projects-page .project-grid>div{padding:16px}
+ .projects-page .project-grid .project-img{height:210px;padding:12px}
+ .projects-page .project-text .mb-2{font-size:25px}
+}
+@media(max-width:575px){
+ .projects-page .about-text-box h1{font-size:40px;letter-spacing:-1.7px}
+ .projects-page .about-con img.about-img{height:235px;padding:14px}
+ .projects-page .project-grid{grid-template-columns:minmax(0,1fr)}
+ .projects-page .project-grid .project-img{height:200px}
+ .projects-page .project-description{font-size:12px}
+ .projects-page .project-text .text-2{font-size:8px;letter-spacing:1.2px}
+}
+@media(prefers-reduced-motion:reduce){.projects-page .project-grid>div,.projects-page .project-grid img,.projects-page .project-link{transition:none;transform:none}}

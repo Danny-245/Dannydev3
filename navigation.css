@@ -1,6 +1,9 @@
 /* Shared Dannydevv navigation, isolated from page and Bootstrap styles. */
-.dd-header{position:sticky;top:0;z-index:1050;width:100%;border-bottom:1px solid #dfe8f2;background:rgba(255,255,255,.96);backdrop-filter:blur(16px)}
-.dd-header .dd-nav{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;position:relative;width:min(1180px,calc(100% - 48px));min-height:82px;margin:0 auto;padding:0;line-height:1.7;font-family:'Open Sans',sans-serif}
+/* Keep document scrolling and header geometry consistent across page styles. */
+html:has(body>.dd-header){height:auto;min-height:100%;scroll-padding-top:100px}
+body:has(>.dd-header){height:auto;min-height:100vh;margin:0}
+body>.dd-header{position:sticky;top:0;z-index:1030;display:block;flex:none;box-sizing:border-box;width:100%;height:83px;min-height:83px;margin:0;padding:0;overflow:visible;border:0;border-bottom:1px solid #dfe8f2;background:#fff;box-shadow:0 3px 16px #00285508;transform:none;isolation:isolate}
+.dd-header .dd-nav{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;position:relative;width:min(1180px,calc(100% - 48px));height:82px;min-height:82px;margin:0 auto;padding:0;line-height:1.7;font-family:'Open Sans',sans-serif}
 .dd-header .dd-logo{display:block;width:160px;height:48px;max-width:100%;object-fit:contain}
 .dd-header #menu{display:flex;align-items:center;gap:32px}
 .dd-header #menu a{font-size:12px;font-weight:700;line-height:1.7;text-decoration:none;color:#18334f}
@@ -9,7 +12,8 @@
 .dd-header #menu-toggle{display:none}
 .dd-header :focus-visible{outline:3px solid #e98074;outline-offset:5px}
 @media(max-width:800px){
- .dd-header .dd-nav{width:calc(100% - 36px);min-height:72px}
+ body>.dd-header{height:73px;min-height:73px}
+ .dd-header .dd-nav{width:calc(100% - 36px);height:72px;min-height:72px}
  .dd-header #menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;padding:8px;border:1px solid #dfe8f2;border-radius:8px;background:#fff;cursor:pointer;z-index:2}
  .dd-header #menu-toggle span{display:block;width:24px;height:2px;background:#002855;transition:transform .25s,opacity .25s}
  .dd-header #menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(7px) rotate(45deg)}
